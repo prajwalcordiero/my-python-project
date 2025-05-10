@@ -21,11 +21,11 @@ health_img = pygame.image.load('health.png')
 enemy_img = pygame.image.load('enemy.png')
 
 # --- Grid Drawing Function ---
-# def draw_grid():
-#     for line in range(0, screen_height // tile_size + 1):
-#         pygame.draw.line(screen, (255, 255, 255), (0, line * tile_size), (screen_width, line * tile_size))
-#     for line in range(0, screen_width // tile_size + 1):
-#         pygame.draw.line(screen, (255, 255, 255), (line * tile_size, 0), (line * tile_size, screen_height))
+def draw_grid():
+    for line in range(0, screen_height // tile_size + 1):
+        pygame.draw.line(screen, (255, 255, 255), (0, line * tile_size), (screen_width, line * tile_size))
+    for line in range(0, screen_width // tile_size + 1):
+        pygame.draw.line(screen, (255, 255, 255), (line * tile_size, 0), (line * tile_size, screen_height))
 
 # --- Player Class ---
 class Player():
